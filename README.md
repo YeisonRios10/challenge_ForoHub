@@ -46,6 +46,8 @@ server.error.include-stacktrace=never
 
 api.security.secret=${JWT_SECRET}
 
+```
+
 Base de Datos
 He utilizado MySQL para la base de datos. Asegúrate de que MySQL esté instalado y configurado en tu máquina. Puedes cambiar el nombre de la base de datos y la contraseña en las variables de entorno DB_NAME y DB_PASS.
 
