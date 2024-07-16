@@ -1,29 +1,35 @@
-🗨️ ForoHub
-Bienvenidos a ForoHub, un proyecto desafiante y emocionante que he desarrollado como parte de mi aprendizaje en desarrollo backend con Java y Spring Boot. En este proyecto, he implementado un foro completamente funcional donde los usuarios pueden crear, listar y eliminar tópicos, con seguridad basada en JSON Web Tokens (JWT).
+# 🗨️ ForoHub
 
-🚀 Tecnologías Utilizadas
-Java JDK: versión 17 en adelante
-Maven: versión 4 en adelante
-Spring Boot: versión 3 en adelante
-MySQL: versión 8 en adelante
-IDE: IntelliJ IDEA (opcional)
-📦 Dependencias del Proyecto
+¡Bienvenidos a ForoHub! Este es un proyecto desafiante y emocionante que he desarrollado como parte de mi aprendizaje en desarrollo backend con Java y Spring Boot. En ForoHub, he implementado un foro completamente funcional donde los usuarios pueden crear, listar y eliminar tópicos, con seguridad basada en JSON Web Tokens (JWT).
+
+## 🚀 Tecnologías Utilizadas
+
+- Java JDK: versión 17 en adelante
+- Maven: versión 4 en adelante
+- Spring Boot: versión 3 en adelante
+- MySQL: versión 8 en adelante
+- IDE: IntelliJ IDEA (opcional)
+
+## 📦 Dependencias del Proyecto
+
 Al crear el proyecto con Spring Initializr, he agregado las siguientes dependencias:
 
-Lombok
-Spring Web
-Spring Boot DevTools
-Spring Data JPA
-Flyway Migration
-MySQL Driver
-Validation
-Spring Security
-⚙️ Configuración del Proyecto
-Variables de Entorno
+- Lombok
+- Spring Web
+- Spring Boot DevTools
+- Spring Data JPA
+- Flyway Migration
+- MySQL Driver
+- Validation
+- Spring Security
+
+## ⚙️ Configuración del Proyecto
+
+### Variables de Entorno
+
 Para mejorar la seguridad y flexibilidad, he utilizado variables de entorno para almacenar las credenciales de la base de datos y el secreto de JWT. Asegúrate de definir estas variables en tu entorno antes de ejecutar la aplicación.
 
-properties
-Copiar código
+```properties
 spring.application.name=foro_hub
 
 spring.datasource.url=jdbc:mysql://localhost/foro_hub
@@ -39,6 +45,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 server.error.include-stacktrace=never
 
 api.security.secret=${JWT_SECRET}
+
 Base de Datos
 He utilizado MySQL para la base de datos. Asegúrate de que MySQL esté instalado y configurado en tu máquina. Puedes cambiar el nombre de la base de datos y la contraseña en las variables de entorno DB_NAME y DB_PASS.
 
